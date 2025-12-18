@@ -1,4 +1,4 @@
-:root{
+:root {
     /* Neutral */
     --black: #89939E;
     --D_Grey: #4D4D4D;
@@ -9,8 +9,8 @@
     --White: #FFFFFF;
 
     /* Primary */
-    --Brand-primary:#4CAF4F;
-;
+    --Brand-primary: #4CAF4F;
+    ;
     --Primary: #28CB8B;
     --Secondary: #263238;
     --Info: #2194f3;
@@ -30,10 +30,10 @@
     --Tint-5: #E8F5E9;
 
     /* Font sizes */
-    --headline-1 : 4rem;
-    --headline-2 : 2.25rem;
-    --headline-3 : 1.75rem;
-    --headline-4 : 1.25rem;
+    --headline-1: 4rem;
+    --headline-2: 2.25rem;
+    --headline-3: 1.75rem;
+    --headline-4: 1.25rem;
 
     --body-1: 1.5rem;
     --body-2: 1rem;
@@ -43,73 +43,86 @@
     /* text */
     --text-gray-900: #18191F;
 
-    
+
 }
+
 @font-face {
-        font-family: 'Inter';
-        src: url('../Inter/Inter-VariableFont_opsz,wght.ttf');
+    font-family: 'Inter';
+    src: url('../Inter/Inter-VariableFont_opsz,wght.ttf');
 }
+
 /* #region Generals */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter' ;
+    font-family: 'Inter';
 }
-body{
+
+body {
     min-width: 240px;
 }
-h1{
+
+h1 {
     font-size: var(--headline-1);
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /* #endregion */
 
 /* #region header */
-header{
+header {
     display: flex;
     flex-direction: column;
 }
 
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
 }
-nav ul a{
+
+nav ul a {
     color: var(--text-gray-900);
 }
-nav ul a:hover{
+
+nav ul a:hover {
     text-decoration: underline;
 }
+
 /* #endregion */
 
-.buttons-container{
+.buttons-container {
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
     margin-top: 12px;
 }
-.buttons-container button{
+
+.buttons-container button {
     width: 20%;
 }
-.outline-button{
+
+.outline-button {
     font-size: var(--body-3);
     color: var(--Brand-primary);
     background-color: transparent;
     border: 0;
 }
-.fill-button{
+
+.fill-button {
     font-size: var(--body-3);
-    color: var(--White) ;
+    color: var(--White);
     background-color: var(--Brand-primary);
     border: 0;
     border-radius: 6px;
@@ -117,56 +130,68 @@ nav ul a:hover{
 }
 
 /* #region hero section */
-main{
+main {
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-.hero-button{
+
+.hero-button {
     padding: 14px 32px;
 }
 
-.green-heading{
+.green-heading {
     color: var(--Brand-primary);
 }
-.hero{
+
+.hero {
     background-color: var(--Silver);
     display: flex;
     flex-direction: column;
     gap: 4rem;
     text-align: center;
 }
-.hero p{
+
+.hero p {
     color: var(--Grey);
     font-size: var(--body-2);
     font-weight: 400;
 }
-.hero img{
+
+.hero img {
     width: 80%;
 }
+
 /* #endregion */
 
 /* #region ourclients */
 .manage-comunity,
-#our-clients{
-   text-align: center;
+#our-clients {
+    text-align: center;
 }
+
+.marketing-section h2,
+.design-section h2,
+.unlock-section h2,
+.achievements-section h2,
 .manage-comunity h2,
-#our-clients h2{
+#our-clients h2 {
     font-size: var(--headline-2);
     color: var(--D_Grey);
 }
+
+.marketing-section p,
 .manage-comunity p,
-#our-clients p{
+#our-clients p {
     font-size: var(--body-2);
     color: var(--Grey);
 }
 
-#our-clients .brands{
+#our-clients .brands {
     margin-top: 3rem;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,19 +199,143 @@ main{
     gap: 24px;
     padding: 2rem 9rem;
 }
-.card h3{
+
+.card h3 {
     font-size: var(--headline-3);
 }
-.card{
+
+.card {
     box-shadow: 0 2px 4px #ABBED133;
     min-width: 240px;
     max-width: 50%;
     padding: 24px 32px;
     border-radius: 8px;
 }
+
 /* #endregion */
 
-
-@media screen {
-    
+/* #region main-body */
+.main-body {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
+
+.design-section,
+.unlock-section {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 2rem;
+}
+
+.meat-customer,
+.design-section>div p,
+.unlock-section>div p {
+    font-size: var(--body-3);
+    color: var(--Grey);
+}
+.meat-customer,
+.design-section>div,
+.unlock-section>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 2rem;
+}
+.description-customer .brands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-body >section {
+    padding: 0 2rem;
+}
+.unlock-section img {
+    width: 80%;
+}
+
+.achievements-section > div p{
+    font-size: var(--body-2);
+    color: var(--text-gray-900);
+}
+.achievements-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Silver);
+    padding: 2em;
+}
+.cards-helping-container{
+    margin-top: 2rem;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: end;
+    gap: 1em;
+}
+
+/* #endregion */
+
+/* #region meet-customers */
+.meat-customer{
+    background-color: var(--Silver);
+    padding: 2% !important;
+}
+
+.meet-all-customers{
+    position: relative;
+}
+.meet-all-customers img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(150%,50%);
+}
+/* #endregion */
+
+/* marketing-section */
+.marketing-section{
+    text-align: center;
+}
+.cards-marketing-container{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+}
+.card-marketing{
+    position: relative;
+}
+
+.card-marketing >div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    transform: translate(23%,40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Silver);
+    border-radius: 8px;
+    padding: 16px;
+}
+.read-more > p{
+    color: var(--Brand-primary);
+}
+.read-more{
+    position: relative;
+}
+.read-more img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(150%,50%);
+}
+
+@media screen {}
