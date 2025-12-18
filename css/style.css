@@ -60,7 +60,7 @@
 }
 
 body {
-    min-width: 240px;
+    min-width: 480px;
 }
 
 h1 {
@@ -109,9 +109,7 @@ nav ul a:hover {
     margin-top: 12px;
 }
 
-.buttons-container button {
-    width: 20%;
-}
+
 
 .outline-button {
     font-size: var(--body-3);
@@ -206,8 +204,6 @@ main {
 
 .card {
     box-shadow: 0 2px 4px #ABBED133;
-    min-width: 240px;
-    max-width: 50%;
     padding: 24px 32px;
     border-radius: 8px;
 }
@@ -229,12 +225,18 @@ main {
     padding: 2rem;
 }
 
+.meat-customer figure img,
+.design-section img {
+    width: 100%;
+}
+
 .meat-customer,
 .design-section>div p,
 .unlock-section>div p {
     font-size: var(--body-3);
     color: var(--Grey);
 }
+
 .meat-customer,
 .design-section>div,
 .unlock-section>div {
@@ -244,30 +246,35 @@ main {
     gap: 28px;
     padding: 2rem;
 }
-.description-customer .brands{
+
+.description-customer .brands {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.main-body >section {
+
+.main-body>section {
     padding: 0 2rem;
 }
+
 .unlock-section img {
     width: 80%;
 }
 
-.achievements-section > div p{
+.achievements-section>div p {
     font-size: var(--body-2);
     color: var(--text-gray-900);
 }
-.achievements-section{
+
+.achievements-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: var(--Silver);
     padding: 2em;
 }
-.cards-helping-container{
+
+.cards-helping-container {
     margin-top: 2rem;
     width: 80%;
     display: grid;
@@ -280,43 +287,51 @@ main {
 /* #endregion */
 
 /* #region meet-customers */
-.meat-customer{
+.meat-customer {
     background-color: var(--Silver);
     padding: 2% !important;
 }
 
-.meet-all-customers{
+.meet-all-customers {
     position: relative;
 }
-.meet-all-customers img{
+
+.meet-all-customers img {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(150%,50%);
+    transform: translate(150%, 50%);
 }
+
 /* #endregion */
 
 /* marketing-section */
-.marketing-section{
+.marketing-section {
     text-align: center;
 }
-.cards-marketing-container{
+
+.cards-marketing-container {
     margin: 2rem 0;
     display: flex;
     flex-direction: column;
     gap: 5rem;
 
 }
-.card-marketing{
+
+.card-marketing {
     position: relative;
 }
 
-.card-marketing >div{
+.card-marketing figure img {
+    width: 100%;
+}
+
+.card-marketing>div {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 70%;
-    transform: translate(23%,40%);
+    transform: translate(23%, 40%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,17 +340,96 @@ main {
     border-radius: 8px;
     padding: 16px;
 }
-.read-more > p{
+
+.read-more>p {
     color: var(--Brand-primary);
 }
-.read-more{
+
+.read-more {
     position: relative;
 }
-.read-more img{
+
+.read-more img {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(150%,50%);
+    transform: translate(150%, 50%);
 }
 
-@media screen {}
+/* #region footer */
+footer {
+    min-width: 480px;
+}
+
+footer section {
+    text-align: center;
+}
+
+footer section .title-footer {
+    font-size: var(--headline-1);
+    font-weight: 500;
+}
+
+
+.grid-footer h4 {
+    font-size: var(--headline-4);
+}
+
+.grid-footer a {
+    color: var(--Silver);
+    font-size: var(--body-3);
+}
+
+.grid-footer {
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    color: var(--Silver);
+    background-color: var(--Secondary);
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#email {
+    opacity: 20%;
+    border-radius: 8px;
+    padding: .5rem;
+}
+
+/* endregion */
+
+@media (min-width: 768px) {
+    .card {
+        width: 50%;
+    }
+
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    .buttons-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
