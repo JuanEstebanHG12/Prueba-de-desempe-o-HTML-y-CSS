@@ -415,6 +415,7 @@ footer section .title-footer {
 
 @media (min-width: 1024px) {
     header {
+        padding: 0 3rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -426,8 +427,68 @@ footer section .title-footer {
         flex-direction: row;
         justify-content: space-between;
     }
-    
-
+    .hero{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .brands {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 9%;
+    }
+    .cards-container{
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .card{
+        width: 20%;
+    }
+    .unlock-section{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .unlock-section > div{
+        width: 40%;
+        text-align: left;
+        align-items: flex-start;
+    }
+    .unlock-section > figure img{
+        width: 80%;
+    }
+    .achievements-section{
+        flex-direction: row;
+        justify-content:center ;
+    }
+    .cards-helping-container{
+        width: 40%;
+    }
+    .design-section>div{
+        width: 40%;
+    }
+    .design-section{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .meat-customer{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .description-customer .brands{
+        flex-direction: row;
+    }
+    .description-customer{
+        width: 40%;
+    }
+    .cards-marketing-container{
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
     .grid-footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

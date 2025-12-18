@@ -1,2 +1,3 @@
 # Prueba-de-desempe-o-HTML-y-CSS
-Prueba de desempeño riwi html y css
+##prueba Realizada por Juan Esteban Holguin Galeano
+###Clan -> Hamilton
